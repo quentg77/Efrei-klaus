@@ -6,7 +6,7 @@ class Toy {
     }
 
     isMoved() {
-        console.log("isMoved");
+        //console.log("isMoved");
     }
 }
 

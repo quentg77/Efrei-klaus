@@ -1,3 +1,2 @@
-(() => {
-    console.log("babel Ok")
-})()
+import Pony from "./class/Pony";
+new Pony().isMoved();

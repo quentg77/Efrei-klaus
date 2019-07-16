@@ -1,5 +1,10 @@
-class Toy {
-    type = "";
+import Obj from "../class/Object";
+
+class Toy extends Obj {
+    constructor(type = "") {
+        super();
+        this.type = type;
+    }
 
     getType() {
         return this.type;

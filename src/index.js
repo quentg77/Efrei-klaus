@@ -4,6 +4,8 @@ import DBHeroes from "./enum/DBHeroes";
 import Box from "./class/Box";
 import Elf from "./class/Elf";
 import GiftWrap from "./class/GiftWrap";
+import Table from "./class/Table";
+import ConveyorBelt from "./class/ConveyorBelt";
 
 console.log("--- STEP #1 ---");
 let pony = new Pony();
@@ -28,6 +30,27 @@ let toy = majdi.unpack(paper);
 console.log(toy === pony);
 let r = majdi.unpack(paper);
 console.log(r == null);
+
+console.log("--- STEP #3 ---");
+
+var table = new Table();
+var conveyor = new ConveyorBelt();
+
+majdi.put(table, paper);
+majdi.put(table, pony);
+majdi.put(table, box);
+
+table.look();
+
+
+
+// let pony = new Pony();
+
+// var table = new Table([pony, pony]);
+// console.log(table.take());
+// table.look();
+
+
 
 
 // let pony = new Pony();

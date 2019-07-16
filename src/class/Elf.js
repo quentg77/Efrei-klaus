@@ -1,5 +1,7 @@
 import Packaging from "../protocol/Packaging";
 import Toy from "../protocol/Toy";
+import Furniture from "../protocol/Furniture";
+import Obj from "./Object";
 
 class Elf {
 	constructor(nickname) {
@@ -37,6 +39,19 @@ class Elf {
 			console.log(`Ooooooh! Just unpacking the toy ~~ ${toy.type} ~~`);
 			return toy;
 		}
+	}
+
+	/**
+	 * Put object on furniture
+	 * @param {Furniture} furniture 
+	 * @param {Obj} obj 
+	 */
+	put(furniture, obj) {
+		furniture.put(obj);
+	}
+
+	take() {
+
 	}
 }
 

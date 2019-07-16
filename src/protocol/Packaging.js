@@ -1,12 +1,14 @@
 import Toy from "./Toy";
+import Obj from "../class/Object";
 
-class Packaging {
+class Packaging extends Obj {
     /**
      * 
      * @param {boolean} isOpen 
      * @param {Toy} toy 
      */
     constructor(isOpen = false, toy = null) {
+        super();
         this.isOpen = isOpen;
         this.toy = toy;
     }
